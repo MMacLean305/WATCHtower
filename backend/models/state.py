@@ -7,4 +7,5 @@ class State(db.Model):
     iso_code = db.Column(db.String(3), unique=True, nullable=False)
     region = db.Column(db.String(50), nullable=False)
     subregion = db.Column(db.String(100))
+    overview = db.Column(db.Text)
 
