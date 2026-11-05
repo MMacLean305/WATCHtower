@@ -11,7 +11,7 @@ def seed_states():
     added = 0
     skipped = 0
 
-    with app.context():
+    with app.app_context():
         for state_data in states:
             iso_code = state_data["iso_code"]
             existing = State.query.filter_by(iso_code=iso_code).first()

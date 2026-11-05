@@ -7,3 +7,4 @@ class Source(db.Model):
     description = db.Column(db.Text)
     last_updated = db.Column(db.DateTime(timezone=True))
     is_active = db.Column(db.Boolean, default=True, nullable=False)
+    events = db.relationship("Event", back_populates="source")
