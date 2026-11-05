@@ -1,10 +1,7 @@
-
 import json
 from pathlib import Path
-
 import requests
 from bs4 import BeautifulSoup
-
 
 URL = "https://unstats.un.org/unsd/methodology/m49/overview/"
 
