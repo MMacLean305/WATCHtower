@@ -523,6 +523,6 @@ Any future geopolitical risk indicators will represent descriptive assessments b
 
 **Matthew MacLean**
 
-University of Florida — Computer Science
+University of Florida - Computer Science
 
 GitHub: https://github.com/MMacLean305
