@@ -1,1738 +1,2002 @@
 [
     {
         "name": "Afghanistan",
-        "official_name": null,
+        "official_name": "Islamic Republic of Afghanistan",
         "iso_code": "AFG",
         "region": "Asia",
-        "subregion": "Southern Asia"
+        "subregion": "Southern Asia",
+        "latlng": null
     },
     {
         "name": "Albania",
-        "official_name": null,
+        "official_name": "Republic of Albania",
         "iso_code": "ALB",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southeast Europe",
+        "latlng": null
     },
     {
         "name": "Algeria",
-        "official_name": null,
+        "official_name": "People's Democratic Republic of Algeria",
         "iso_code": "DZA",
         "region": "Africa",
-        "subregion": "Northern Africa"
+        "subregion": "Northern Africa",
+        "latlng": null
     },
     {
         "name": "American Samoa",
-        "official_name": null,
+        "official_name": "American Samoa",
         "iso_code": "ASM",
         "region": "Oceania",
-        "subregion": "Polynesia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
         "name": "Andorra",
-        "official_name": null,
+        "official_name": "Principality of Andorra",
         "iso_code": "AND",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southern Europe",
+        "latlng": null
     },
     {
         "name": "Angola",
-        "official_name": null,
+        "official_name": "Republic of Angola",
         "iso_code": "AGO",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Middle Africa",
+        "latlng": null
     },
     {
         "name": "Anguilla",
-        "official_name": null,
+        "official_name": "Anguilla",
         "iso_code": "AIA",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Antarctica",
-        "official_name": null,
+        "official_name": "Antarctica",
         "iso_code": "ATA",
-        "region": "Unclassified",
-        "subregion": null
+        "region": "Antarctic",
+        "subregion": "Unclassified",
+        "latlng": null
     },
     {
         "name": "Antigua and Barbuda",
-        "official_name": null,
+        "official_name": "Antigua and Barbuda",
         "iso_code": "ATG",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Argentina",
-        "official_name": null,
+        "official_name": "Argentine Republic",
         "iso_code": "ARG",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "Armenia",
-        "official_name": null,
+        "official_name": "Republic of Armenia",
         "iso_code": "ARM",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Aruba",
-        "official_name": null,
+        "official_name": "Aruba",
         "iso_code": "ABW",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Australia",
-        "official_name": null,
+        "official_name": "Commonwealth of Australia",
         "iso_code": "AUS",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand"
+        "subregion": "Australia and New Zealand",
+        "latlng": null
     },
     {
         "name": "Austria",
-        "official_name": null,
+        "official_name": "Republic of Austria",
         "iso_code": "AUT",
         "region": "Europe",
-        "subregion": "Western Europe"
+        "subregion": "Central Europe",
+        "latlng": null
     },
     {
         "name": "Azerbaijan",
-        "official_name": null,
+        "official_name": "Republic of Azerbaijan",
         "iso_code": "AZE",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Bahamas",
-        "official_name": null,
+        "official_name": "Commonwealth of the Bahamas",
         "iso_code": "BHS",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Bahrain",
-        "official_name": null,
+        "official_name": "Kingdom of Bahrain",
         "iso_code": "BHR",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Bangladesh",
-        "official_name": null,
+        "official_name": "People's Republic of Bangladesh",
         "iso_code": "BGD",
         "region": "Asia",
-        "subregion": "Southern Asia"
+        "subregion": "Southern Asia",
+        "latlng": null
     },
     {
         "name": "Barbados",
-        "official_name": null,
+        "official_name": "Barbados",
         "iso_code": "BRB",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Belarus",
-        "official_name": null,
+        "official_name": "Republic of Belarus",
         "iso_code": "BLR",
         "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Eastern Europe",
+        "latlng": null
     },
     {
         "name": "Belgium",
-        "official_name": null,
+        "official_name": "Kingdom of Belgium",
         "iso_code": "BEL",
         "region": "Europe",
-        "subregion": "Western Europe"
+        "subregion": "Western Europe",
+        "latlng": null
     },
     {
         "name": "Belize",
-        "official_name": null,
+        "official_name": "Belize",
         "iso_code": "BLZ",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Central America",
+        "latlng": null
     },
     {
         "name": "Benin",
-        "official_name": null,
+        "official_name": "Republic of Benin",
         "iso_code": "BEN",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Bermuda",
-        "official_name": null,
+        "official_name": "Bermuda",
         "iso_code": "BMU",
         "region": "Americas",
-        "subregion": "Northern America"
+        "subregion": "North America",
+        "latlng": null
     },
     {
         "name": "Bhutan",
-        "official_name": null,
+        "official_name": "Kingdom of Bhutan",
         "iso_code": "BTN",
         "region": "Asia",
-        "subregion": "Southern Asia"
+        "subregion": "Southern Asia",
+        "latlng": null
     },
     {
-        "name": "Bolivia (Plurinational State of)",
-        "official_name": null,
+        "name": "Bolivia",
+        "official_name": "Plurinational State of Bolivia",
         "iso_code": "BOL",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
-    },
-    {
-        "name": "Bonaire, Sint Eustatius and Saba",
-        "official_name": null,
-        "iso_code": "BES",
-        "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "Bosnia and Herzegovina",
-        "official_name": null,
+        "official_name": "Bosnia and Herzegovina",
         "iso_code": "BIH",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southeast Europe",
+        "latlng": null
     },
     {
         "name": "Botswana",
-        "official_name": null,
+        "official_name": "Republic of Botswana",
         "iso_code": "BWA",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Southern Africa",
+        "latlng": null
     },
     {
         "name": "Bouvet Island",
-        "official_name": null,
+        "official_name": "Bouvet Island",
         "iso_code": "BVT",
-        "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "region": "Antarctic",
+        "subregion": "Unclassified",
+        "latlng": null
     },
     {
         "name": "Brazil",
-        "official_name": null,
+        "official_name": "Federative Republic of Brazil",
         "iso_code": "BRA",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "British Indian Ocean Territory",
-        "official_name": null,
+        "official_name": "British Indian Ocean Territory",
         "iso_code": "IOT",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "British Virgin Islands",
-        "official_name": null,
+        "official_name": "Virgin Islands",
         "iso_code": "VGB",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
-        "name": "Brunei Darussalam",
-        "official_name": null,
+        "name": "Brunei",
+        "official_name": "Nation of Brunei, the Abode of Peace",
         "iso_code": "BRN",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Bulgaria",
-        "official_name": null,
+        "official_name": "Republic of Bulgaria",
         "iso_code": "BGR",
         "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Southeast Europe",
+        "latlng": null
     },
     {
         "name": "Burkina Faso",
-        "official_name": null,
+        "official_name": "Burkina Faso",
         "iso_code": "BFA",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Burundi",
-        "official_name": null,
+        "official_name": "Republic of Burundi",
         "iso_code": "BDI",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Cabo Verde",
-        "official_name": null,
+        "official_name": "Republic of Cabo Verde",
         "iso_code": "CPV",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Cambodia",
-        "official_name": null,
+        "official_name": "Kingdom of Cambodia",
         "iso_code": "KHM",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Cameroon",
-        "official_name": null,
+        "official_name": "Republic of Cameroon",
         "iso_code": "CMR",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Middle Africa",
+        "latlng": null
     },
     {
         "name": "Canada",
-        "official_name": null,
+        "official_name": "Canada",
         "iso_code": "CAN",
         "region": "Americas",
-        "subregion": "Northern America"
+        "subregion": "North America",
+        "latlng": null
+    },
+    {
+        "name": "Caribbean Netherlands",
+        "official_name": "Bonaire, Sint Eustatius and Saba",
+        "iso_code": "BES",
+        "region": "Americas",
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Cayman Islands",
-        "official_name": null,
+        "official_name": "Cayman Islands",
         "iso_code": "CYM",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Central African Republic",
-        "official_name": null,
+        "official_name": "Central African Republic",
         "iso_code": "CAF",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Middle Africa",
+        "latlng": null
     },
     {
         "name": "Chad",
-        "official_name": null,
+        "official_name": "Republic of Chad",
         "iso_code": "TCD",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Middle Africa",
+        "latlng": null
     },
     {
         "name": "Chile",
-        "official_name": null,
+        "official_name": "Republic of Chile",
         "iso_code": "CHL",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "China",
-        "official_name": null,
+        "official_name": "People's Republic of China",
         "iso_code": "CHN",
         "region": "Asia",
-        "subregion": "Eastern Asia"
-    },
-    {
-        "name": "China, Hong Kong Special Administrative Region",
-        "official_name": null,
-        "iso_code": "HKG",
-        "region": "Asia",
-        "subregion": "Eastern Asia"
-    },
-    {
-        "name": "China, Macao Special Administrative Region",
-        "official_name": null,
-        "iso_code": "MAC",
-        "region": "Asia",
-        "subregion": "Eastern Asia"
+        "subregion": "Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Christmas Island",
-        "official_name": null,
+        "official_name": "Territory of Christmas Island",
         "iso_code": "CXR",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand"
+        "subregion": "Australia and New Zealand",
+        "latlng": null
     },
     {
         "name": "Cocos (Keeling) Islands",
-        "official_name": null,
+        "official_name": "Territory of the Cocos (Keeling) Islands",
         "iso_code": "CCK",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand"
+        "subregion": "Australia and New Zealand",
+        "latlng": null
     },
     {
         "name": "Colombia",
-        "official_name": null,
+        "official_name": "Republic of Colombia",
         "iso_code": "COL",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "Comoros",
-        "official_name": null,
+        "official_name": "Union of the Comoros",
         "iso_code": "COM",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Congo",
-        "official_name": null,
+        "official_name": "Republic of the Congo",
         "iso_code": "COG",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Middle Africa",
+        "latlng": null
     },
     {
         "name": "Cook Islands",
-        "official_name": null,
+        "official_name": "Cook Islands",
         "iso_code": "COK",
         "region": "Oceania",
-        "subregion": "Polynesia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
         "name": "Costa Rica",
-        "official_name": null,
+        "official_name": "Republic of Costa Rica",
         "iso_code": "CRI",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Central America",
+        "latlng": null
     },
     {
         "name": "Croatia",
-        "official_name": null,
+        "official_name": "Republic of Croatia",
         "iso_code": "HRV",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southeast Europe",
+        "latlng": null
     },
     {
         "name": "Cuba",
-        "official_name": null,
+        "official_name": "Republic of Cuba",
         "iso_code": "CUB",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Curaçao",
-        "official_name": null,
+        "official_name": "Country of Curaçao",
         "iso_code": "CUW",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Cyprus",
-        "official_name": null,
+        "official_name": "Republic of Cyprus",
         "iso_code": "CYP",
-        "region": "Asia",
-        "subregion": "Western Asia"
+        "region": "Europe",
+        "subregion": "Southern Europe",
+        "latlng": null
     },
     {
         "name": "Czechia",
-        "official_name": null,
+        "official_name": "Czech Republic",
         "iso_code": "CZE",
         "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Central Europe",
+        "latlng": null
     },
     {
-        "name": "Côte d’Ivoire",
-        "official_name": null,
-        "iso_code": "CIV",
-        "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
-    },
-    {
-        "name": "Democratic People's Republic of Korea",
-        "official_name": null,
-        "iso_code": "PRK",
-        "region": "Asia",
-        "subregion": "Eastern Asia"
-    },
-    {
-        "name": "Democratic Republic of the Congo",
-        "official_name": null,
+        "name": "DRC",
+        "official_name": "Democratic Republic of the Congo",
         "iso_code": "COD",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Middle Africa",
+        "latlng": null
     },
     {
         "name": "Denmark",
-        "official_name": null,
+        "official_name": "Kingdom of Denmark",
         "iso_code": "DNK",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Djibouti",
-        "official_name": null,
+        "official_name": "Republic of Djibouti",
         "iso_code": "DJI",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Dominica",
-        "official_name": null,
+        "official_name": "Commonwealth of Dominica",
         "iso_code": "DMA",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Dominican Republic",
-        "official_name": null,
+        "official_name": "Dominican Republic",
         "iso_code": "DOM",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Ecuador",
-        "official_name": null,
+        "official_name": "Republic of Ecuador",
         "iso_code": "ECU",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "Egypt",
-        "official_name": null,
+        "official_name": "Arab Republic of Egypt",
         "iso_code": "EGY",
         "region": "Africa",
-        "subregion": "Northern Africa"
+        "subregion": "Northern Africa",
+        "latlng": null
     },
     {
         "name": "El Salvador",
-        "official_name": null,
+        "official_name": "Republic of El Salvador",
         "iso_code": "SLV",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Central America",
+        "latlng": null
     },
     {
         "name": "Equatorial Guinea",
-        "official_name": null,
+        "official_name": "Republic of Equatorial Guinea",
         "iso_code": "GNQ",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Middle Africa",
+        "latlng": null
     },
     {
         "name": "Eritrea",
-        "official_name": null,
+        "official_name": "State of Eritrea",
         "iso_code": "ERI",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Estonia",
-        "official_name": null,
+        "official_name": "Republic of Estonia",
         "iso_code": "EST",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Eswatini",
-        "official_name": null,
+        "official_name": "Kingdom of Eswatini",
         "iso_code": "SWZ",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Southern Africa",
+        "latlng": null
     },
     {
         "name": "Ethiopia",
-        "official_name": null,
+        "official_name": "Federal Democratic Republic of Ethiopia",
         "iso_code": "ETH",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
-        "name": "Falkland Islands (Malvinas)",
-        "official_name": null,
+        "name": "Falkland Islands",
+        "official_name": "Falkland Islands",
         "iso_code": "FLK",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "Faroe Islands",
-        "official_name": null,
+        "official_name": "Faroe Islands",
         "iso_code": "FRO",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Fiji",
-        "official_name": null,
+        "official_name": "Republic of Fiji",
         "iso_code": "FJI",
         "region": "Oceania",
-        "subregion": "Melanesia"
+        "subregion": "Melanesia",
+        "latlng": null
     },
     {
         "name": "Finland",
-        "official_name": null,
+        "official_name": "Republic of Finland",
         "iso_code": "FIN",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "France",
-        "official_name": null,
+        "official_name": "French Republic",
         "iso_code": "FRA",
         "region": "Europe",
-        "subregion": "Western Europe"
+        "subregion": "Western Europe",
+        "latlng": null
     },
     {
         "name": "French Guiana",
-        "official_name": null,
+        "official_name": "Guiana",
         "iso_code": "GUF",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "French Polynesia",
-        "official_name": null,
+        "official_name": "French Polynesia",
         "iso_code": "PYF",
         "region": "Oceania",
-        "subregion": "Polynesia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
-        "name": "French Southern Territories",
-        "official_name": null,
+        "name": "French Southern and Antarctic Lands",
+        "official_name": "Territory of the French Southern and Antarctic Lands",
         "iso_code": "ATF",
-        "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "region": "Antarctic",
+        "subregion": "Unclassified",
+        "latlng": null
     },
     {
         "name": "Gabon",
-        "official_name": null,
+        "official_name": "Gabonese Republic",
         "iso_code": "GAB",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Middle Africa",
+        "latlng": null
     },
     {
         "name": "Gambia",
-        "official_name": null,
+        "official_name": "Republic of the Gambia",
         "iso_code": "GMB",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Georgia",
-        "official_name": null,
+        "official_name": "Georgia",
         "iso_code": "GEO",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Germany",
-        "official_name": null,
+        "official_name": "Federal Republic of Germany",
         "iso_code": "DEU",
         "region": "Europe",
-        "subregion": "Western Europe"
+        "subregion": "Western Europe",
+        "latlng": null
     },
     {
         "name": "Ghana",
-        "official_name": null,
+        "official_name": "Republic of Ghana",
         "iso_code": "GHA",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Gibraltar",
-        "official_name": null,
+        "official_name": "Gibraltar",
         "iso_code": "GIB",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southern Europe",
+        "latlng": null
     },
     {
         "name": "Greece",
-        "official_name": null,
+        "official_name": "Hellenic Republic",
         "iso_code": "GRC",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southern Europe",
+        "latlng": null
     },
     {
         "name": "Greenland",
-        "official_name": null,
+        "official_name": "Greenland",
         "iso_code": "GRL",
         "region": "Americas",
-        "subregion": "Northern America"
+        "subregion": "North America",
+        "latlng": null
     },
     {
         "name": "Grenada",
-        "official_name": null,
+        "official_name": "Grenada",
         "iso_code": "GRD",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Guadeloupe",
-        "official_name": null,
+        "official_name": "Guadeloupe",
         "iso_code": "GLP",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Guam",
-        "official_name": null,
+        "official_name": "Guam",
         "iso_code": "GUM",
         "region": "Oceania",
-        "subregion": "Micronesia"
+        "subregion": "Micronesia",
+        "latlng": null
     },
     {
         "name": "Guatemala",
-        "official_name": null,
+        "official_name": "Republic of Guatemala",
         "iso_code": "GTM",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Central America",
+        "latlng": null
     },
     {
         "name": "Guernsey",
-        "official_name": null,
+        "official_name": "Bailiwick of Guernsey",
         "iso_code": "GGY",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Guinea",
-        "official_name": null,
+        "official_name": "Republic of Guinea",
         "iso_code": "GIN",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Guinea-Bissau",
-        "official_name": null,
+        "official_name": "Republic of Guinea-Bissau",
         "iso_code": "GNB",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Guyana",
-        "official_name": null,
+        "official_name": "Co-operative Republic of Guyana",
         "iso_code": "GUY",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "Haiti",
-        "official_name": null,
+        "official_name": "Republic of Haiti",
         "iso_code": "HTI",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Heard Island and McDonald Islands",
-        "official_name": null,
+        "official_name": "Heard Island and McDonald Islands",
         "iso_code": "HMD",
-        "region": "Oceania",
-        "subregion": "Australia and New Zealand"
-    },
-    {
-        "name": "Holy See",
-        "official_name": null,
-        "iso_code": "VAT",
-        "region": "Europe",
-        "subregion": "Southern Europe"
+        "region": "Antarctic",
+        "subregion": "Unclassified",
+        "latlng": null
     },
     {
         "name": "Honduras",
-        "official_name": null,
+        "official_name": "Republic of Honduras",
         "iso_code": "HND",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Central America",
+        "latlng": null
+    },
+    {
+        "name": "Hong Kong",
+        "official_name": "Hong Kong Special Administrative Region of the People's Republic of China",
+        "iso_code": "HKG",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Hungary",
-        "official_name": null,
+        "official_name": "Hungary",
         "iso_code": "HUN",
         "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Central Europe",
+        "latlng": null
     },
     {
         "name": "Iceland",
-        "official_name": null,
+        "official_name": "Iceland",
         "iso_code": "ISL",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "India",
-        "official_name": null,
+        "official_name": "Republic of India",
         "iso_code": "IND",
         "region": "Asia",
-        "subregion": "Southern Asia"
+        "subregion": "Southern Asia",
+        "latlng": null
     },
     {
         "name": "Indonesia",
-        "official_name": null,
+        "official_name": "Republic of Indonesia",
         "iso_code": "IDN",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
-        "name": "Iran (Islamic Republic of)",
-        "official_name": null,
+        "name": "Iran",
+        "official_name": "Islamic Republic of Iran",
         "iso_code": "IRN",
         "region": "Asia",
-        "subregion": "Southern Asia"
+        "subregion": "Southern Asia",
+        "latlng": null
     },
     {
         "name": "Iraq",
-        "official_name": null,
+        "official_name": "Republic of Iraq",
         "iso_code": "IRQ",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Ireland",
-        "official_name": null,
+        "official_name": "Republic of Ireland",
         "iso_code": "IRL",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Isle of Man",
-        "official_name": null,
+        "official_name": "Isle of Man",
         "iso_code": "IMN",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Israel",
-        "official_name": null,
+        "official_name": "State of Israel",
         "iso_code": "ISR",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Italy",
-        "official_name": null,
+        "official_name": "Italian Republic",
         "iso_code": "ITA",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southern Europe",
+        "latlng": null
+    },
+    {
+        "name": "Ivory Coast",
+        "official_name": "Republic of Côte d'Ivoire",
+        "iso_code": "CIV",
+        "region": "Africa",
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Jamaica",
-        "official_name": null,
+        "official_name": "Jamaica",
         "iso_code": "JAM",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Japan",
-        "official_name": null,
+        "official_name": "Japan",
         "iso_code": "JPN",
         "region": "Asia",
-        "subregion": "Eastern Asia"
+        "subregion": "Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Jersey",
-        "official_name": null,
+        "official_name": "Bailiwick of Jersey",
         "iso_code": "JEY",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Jordan",
-        "official_name": null,
+        "official_name": "Hashemite Kingdom of Jordan",
         "iso_code": "JOR",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Kazakhstan",
-        "official_name": null,
+        "official_name": "Republic of Kazakhstan",
         "iso_code": "KAZ",
         "region": "Asia",
-        "subregion": "Central Asia"
+        "subregion": "Central Asia",
+        "latlng": null
     },
     {
         "name": "Kenya",
-        "official_name": null,
+        "official_name": "Republic of Kenya",
         "iso_code": "KEN",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Kiribati",
-        "official_name": null,
+        "official_name": "Independent and Sovereign Republic of Kiribati",
         "iso_code": "KIR",
         "region": "Oceania",
-        "subregion": "Micronesia"
+        "subregion": "Micronesia",
+        "latlng": null
+    },
+    {
+        "name": "Kosovo",
+        "official_name": "Republic of Kosovo",
+        "iso_code": "UNK",
+        "region": "Europe",
+        "subregion": "Southeast Europe",
+        "latlng": null
     },
     {
         "name": "Kuwait",
-        "official_name": null,
+        "official_name": "State of Kuwait",
         "iso_code": "KWT",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Kyrgyzstan",
-        "official_name": null,
+        "official_name": "Kyrgyz Republic",
         "iso_code": "KGZ",
         "region": "Asia",
-        "subregion": "Central Asia"
+        "subregion": "Central Asia",
+        "latlng": null
     },
     {
-        "name": "Lao People's Democratic Republic",
-        "official_name": null,
+        "name": "Laos",
+        "official_name": "Lao People's Democratic Republic",
         "iso_code": "LAO",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Latvia",
-        "official_name": null,
+        "official_name": "Republic of Latvia",
         "iso_code": "LVA",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Lebanon",
-        "official_name": null,
+        "official_name": "Lebanese Republic",
         "iso_code": "LBN",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Lesotho",
-        "official_name": null,
+        "official_name": "Kingdom of Lesotho",
         "iso_code": "LSO",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Southern Africa",
+        "latlng": null
     },
     {
         "name": "Liberia",
-        "official_name": null,
+        "official_name": "Republic of Liberia",
         "iso_code": "LBR",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Libya",
-        "official_name": null,
+        "official_name": "State of Libya",
         "iso_code": "LBY",
         "region": "Africa",
-        "subregion": "Northern Africa"
+        "subregion": "Northern Africa",
+        "latlng": null
     },
     {
         "name": "Liechtenstein",
-        "official_name": null,
+        "official_name": "Principality of Liechtenstein",
         "iso_code": "LIE",
         "region": "Europe",
-        "subregion": "Western Europe"
+        "subregion": "Western Europe",
+        "latlng": null
     },
     {
         "name": "Lithuania",
-        "official_name": null,
+        "official_name": "Republic of Lithuania",
         "iso_code": "LTU",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Luxembourg",
-        "official_name": null,
+        "official_name": "Grand Duchy of Luxembourg",
         "iso_code": "LUX",
         "region": "Europe",
-        "subregion": "Western Europe"
+        "subregion": "Western Europe",
+        "latlng": null
+    },
+    {
+        "name": "Macau",
+        "official_name": "Macao Special Administrative Region of the People's Republic of China",
+        "iso_code": "MAC",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Madagascar",
-        "official_name": null,
+        "official_name": "Republic of Madagascar",
         "iso_code": "MDG",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Malawi",
-        "official_name": null,
+        "official_name": "Republic of Malawi",
         "iso_code": "MWI",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Malaysia",
-        "official_name": null,
+        "official_name": "Malaysia",
         "iso_code": "MYS",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Maldives",
-        "official_name": null,
+        "official_name": "Republic of Maldives",
         "iso_code": "MDV",
         "region": "Asia",
-        "subregion": "Southern Asia"
+        "subregion": "Southern Asia",
+        "latlng": null
     },
     {
         "name": "Mali",
-        "official_name": null,
+        "official_name": "Republic of Mali",
         "iso_code": "MLI",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Malta",
-        "official_name": null,
+        "official_name": "Republic of Malta",
         "iso_code": "MLT",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southern Europe",
+        "latlng": null
     },
     {
         "name": "Marshall Islands",
-        "official_name": null,
+        "official_name": "Republic of the Marshall Islands",
         "iso_code": "MHL",
         "region": "Oceania",
-        "subregion": "Micronesia"
+        "subregion": "Micronesia",
+        "latlng": null
     },
     {
         "name": "Martinique",
-        "official_name": null,
+        "official_name": "Martinique",
         "iso_code": "MTQ",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Mauritania",
-        "official_name": null,
+        "official_name": "Islamic Republic of Mauritania",
         "iso_code": "MRT",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Mauritius",
-        "official_name": null,
+        "official_name": "Republic of Mauritius",
         "iso_code": "MUS",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Mayotte",
-        "official_name": null,
+        "official_name": "Department of Mayotte",
         "iso_code": "MYT",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Mexico",
-        "official_name": null,
+        "official_name": "United Mexican States",
         "iso_code": "MEX",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "North America",
+        "latlng": null
     },
     {
-        "name": "Micronesia (Federated States of)",
-        "official_name": null,
+        "name": "Micronesia",
+        "official_name": "Federated States of Micronesia",
         "iso_code": "FSM",
         "region": "Oceania",
-        "subregion": "Micronesia"
+        "subregion": "Micronesia",
+        "latlng": null
+    },
+    {
+        "name": "Moldova",
+        "official_name": "Republic of Moldova",
+        "iso_code": "MDA",
+        "region": "Europe",
+        "subregion": "Eastern Europe",
+        "latlng": null
     },
     {
         "name": "Monaco",
-        "official_name": null,
+        "official_name": "Principality of Monaco",
         "iso_code": "MCO",
         "region": "Europe",
-        "subregion": "Western Europe"
+        "subregion": "Western Europe",
+        "latlng": null
     },
     {
         "name": "Mongolia",
-        "official_name": null,
+        "official_name": "Mongolia",
         "iso_code": "MNG",
         "region": "Asia",
-        "subregion": "Eastern Asia"
+        "subregion": "Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Montenegro",
-        "official_name": null,
+        "official_name": "Montenegro",
         "iso_code": "MNE",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southeast Europe",
+        "latlng": null
     },
     {
         "name": "Montserrat",
-        "official_name": null,
+        "official_name": "Montserrat",
         "iso_code": "MSR",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Morocco",
-        "official_name": null,
+        "official_name": "Kingdom of Morocco",
         "iso_code": "MAR",
         "region": "Africa",
-        "subregion": "Northern Africa"
+        "subregion": "Northern Africa",
+        "latlng": null
     },
     {
         "name": "Mozambique",
-        "official_name": null,
+        "official_name": "Republic of Mozambique",
         "iso_code": "MOZ",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Myanmar",
-        "official_name": null,
+        "official_name": "Republic of the Union of Myanmar",
         "iso_code": "MMR",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Namibia",
-        "official_name": null,
+        "official_name": "Republic of Namibia",
         "iso_code": "NAM",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Southern Africa",
+        "latlng": null
     },
     {
         "name": "Naoero",
-        "official_name": null,
+        "official_name": "Republic of Naoero",
         "iso_code": "NRU",
         "region": "Oceania",
-        "subregion": "Micronesia"
+        "subregion": "Micronesia",
+        "latlng": null
     },
     {
         "name": "Nepal",
-        "official_name": null,
+        "official_name": "Federal Democratic Republic of Nepal",
         "iso_code": "NPL",
         "region": "Asia",
-        "subregion": "Southern Asia"
+        "subregion": "Southern Asia",
+        "latlng": null
     },
     {
-        "name": "Netherlands (Kingdom of the)",
-        "official_name": null,
+        "name": "Netherlands",
+        "official_name": "Kingdom of the Netherlands",
         "iso_code": "NLD",
         "region": "Europe",
-        "subregion": "Western Europe"
+        "subregion": "Western Europe",
+        "latlng": null
     },
     {
         "name": "New Caledonia",
-        "official_name": null,
+        "official_name": "New Caledonia",
         "iso_code": "NCL",
         "region": "Oceania",
-        "subregion": "Melanesia"
+        "subregion": "Melanesia",
+        "latlng": null
     },
     {
         "name": "New Zealand",
-        "official_name": null,
+        "official_name": "New Zealand",
         "iso_code": "NZL",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand"
+        "subregion": "Australia and New Zealand",
+        "latlng": null
     },
     {
         "name": "Nicaragua",
-        "official_name": null,
+        "official_name": "Republic of Nicaragua",
         "iso_code": "NIC",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Central America",
+        "latlng": null
     },
     {
         "name": "Niger",
-        "official_name": null,
+        "official_name": "Republic of Niger",
         "iso_code": "NER",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Nigeria",
-        "official_name": null,
+        "official_name": "Federal Republic of Nigeria",
         "iso_code": "NGA",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Niue",
-        "official_name": null,
+        "official_name": "Niue",
         "iso_code": "NIU",
         "region": "Oceania",
-        "subregion": "Polynesia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
         "name": "Norfolk Island",
-        "official_name": null,
+        "official_name": "Territory of Norfolk Island",
         "iso_code": "NFK",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand"
+        "subregion": "Australia and New Zealand",
+        "latlng": null
+    },
+    {
+        "name": "North Korea",
+        "official_name": "Democratic People's Republic of Korea",
+        "iso_code": "PRK",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+        "latlng": null
     },
     {
         "name": "North Macedonia",
-        "official_name": null,
+        "official_name": "Republic of North Macedonia",
         "iso_code": "MKD",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southeast Europe",
+        "latlng": null
     },
     {
         "name": "Northern Mariana Islands",
-        "official_name": null,
+        "official_name": "Commonwealth of the Northern Mariana Islands",
         "iso_code": "MNP",
         "region": "Oceania",
-        "subregion": "Micronesia"
+        "subregion": "Micronesia",
+        "latlng": null
     },
     {
         "name": "Norway",
-        "official_name": null,
+        "official_name": "Kingdom of Norway",
         "iso_code": "NOR",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Oman",
-        "official_name": null,
+        "official_name": "Sultanate of Oman",
         "iso_code": "OMN",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Pakistan",
-        "official_name": null,
+        "official_name": "Islamic Republic of Pakistan",
         "iso_code": "PAK",
         "region": "Asia",
-        "subregion": "Southern Asia"
+        "subregion": "Southern Asia",
+        "latlng": null
     },
     {
         "name": "Palau",
-        "official_name": null,
+        "official_name": "Republic of Palau",
         "iso_code": "PLW",
         "region": "Oceania",
-        "subregion": "Micronesia"
+        "subregion": "Micronesia",
+        "latlng": null
+    },
+    {
+        "name": "Palestine",
+        "official_name": "State of Palestine",
+        "iso_code": "PSE",
+        "region": "Asia",
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Panama",
-        "official_name": null,
+        "official_name": "Republic of Panama",
         "iso_code": "PAN",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Central America",
+        "latlng": null
     },
     {
         "name": "Papua New Guinea",
-        "official_name": null,
+        "official_name": "Independent State of Papua New Guinea",
         "iso_code": "PNG",
         "region": "Oceania",
-        "subregion": "Melanesia"
+        "subregion": "Melanesia",
+        "latlng": null
     },
     {
         "name": "Paraguay",
-        "official_name": null,
+        "official_name": "Republic of Paraguay",
         "iso_code": "PRY",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "Peru",
-        "official_name": null,
+        "official_name": "Republic of Peru",
         "iso_code": "PER",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "Philippines",
-        "official_name": null,
+        "official_name": "Republic of the Philippines",
         "iso_code": "PHL",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
-        "name": "Pitcairn",
-        "official_name": null,
+        "name": "Pitcairn Islands",
+        "official_name": "Pitcairn Group of Islands",
         "iso_code": "PCN",
         "region": "Oceania",
-        "subregion": "Polynesia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
         "name": "Poland",
-        "official_name": null,
+        "official_name": "Republic of Poland",
         "iso_code": "POL",
         "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Central Europe",
+        "latlng": null
     },
     {
         "name": "Portugal",
-        "official_name": null,
+        "official_name": "Portuguese Republic",
         "iso_code": "PRT",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southern Europe",
+        "latlng": null
     },
     {
         "name": "Puerto Rico",
-        "official_name": null,
+        "official_name": "Commonwealth of Puerto Rico",
         "iso_code": "PRI",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Qatar",
-        "official_name": null,
+        "official_name": "State of Qatar",
         "iso_code": "QAT",
         "region": "Asia",
-        "subregion": "Western Asia"
-    },
-    {
-        "name": "Republic of Korea",
-        "official_name": null,
-        "iso_code": "KOR",
-        "region": "Asia",
-        "subregion": "Eastern Asia"
-    },
-    {
-        "name": "Republic of Moldova",
-        "official_name": null,
-        "iso_code": "MDA",
-        "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Romania",
-        "official_name": null,
+        "official_name": "Romania",
         "iso_code": "ROU",
         "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Southeast Europe",
+        "latlng": null
     },
     {
-        "name": "Russian Federation",
-        "official_name": null,
+        "name": "Russia",
+        "official_name": "Russian Federation",
         "iso_code": "RUS",
         "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Eastern Europe",
+        "latlng": null
     },
     {
         "name": "Rwanda",
-        "official_name": null,
+        "official_name": "Republic of Rwanda",
         "iso_code": "RWA",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Réunion",
-        "official_name": null,
+        "official_name": "Réunion Island",
         "iso_code": "REU",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Saint Barthélemy",
-        "official_name": null,
+        "official_name": "Collectivity of Saint Barthélemy",
         "iso_code": "BLM",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
-        "name": "Saint Helena",
-        "official_name": null,
+        "name": "Saint Helena, Ascension and Tristan da Cunha",
+        "official_name": "Saint Helena, Ascension and Tristan da Cunha",
         "iso_code": "SHN",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Saint Kitts and Nevis",
-        "official_name": null,
+        "official_name": "Federation of Saint Christopher and Nevis",
         "iso_code": "KNA",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Saint Lucia",
-        "official_name": null,
+        "official_name": "Saint Lucia",
         "iso_code": "LCA",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
-        "name": "Saint Martin (French Part)",
-        "official_name": null,
+        "name": "Saint Martin",
+        "official_name": "Saint Martin",
         "iso_code": "MAF",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Saint Pierre and Miquelon",
-        "official_name": null,
+        "official_name": "Saint Pierre and Miquelon",
         "iso_code": "SPM",
         "region": "Americas",
-        "subregion": "Northern America"
+        "subregion": "North America",
+        "latlng": null
     },
     {
         "name": "Saint Vincent and the Grenadines",
-        "official_name": null,
+        "official_name": "Saint Vincent and the Grenadines",
         "iso_code": "VCT",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Samoa",
-        "official_name": null,
+        "official_name": "Independent State of Samoa",
         "iso_code": "WSM",
         "region": "Oceania",
-        "subregion": "Polynesia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
         "name": "San Marino",
-        "official_name": null,
+        "official_name": "Republic of San Marino",
         "iso_code": "SMR",
         "region": "Europe",
-        "subregion": "Southern Europe"
-    },
-    {
-        "name": "Sao Tome and Principe",
-        "official_name": null,
-        "iso_code": "STP",
-        "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Southern Europe",
+        "latlng": null
     },
     {
         "name": "Saudi Arabia",
-        "official_name": null,
+        "official_name": "Kingdom of Saudi Arabia",
         "iso_code": "SAU",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Senegal",
-        "official_name": null,
+        "official_name": "Republic of Senegal",
         "iso_code": "SEN",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Serbia",
-        "official_name": null,
+        "official_name": "Republic of Serbia",
         "iso_code": "SRB",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southeast Europe",
+        "latlng": null
     },
     {
         "name": "Seychelles",
-        "official_name": null,
+        "official_name": "Republic of Seychelles",
         "iso_code": "SYC",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Sierra Leone",
-        "official_name": null,
+        "official_name": "Republic of Sierra Leone",
         "iso_code": "SLE",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Singapore",
-        "official_name": null,
+        "official_name": "Republic of Singapore",
         "iso_code": "SGP",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
-        "name": "Sint Maarten (Dutch part)",
-        "official_name": null,
+        "name": "Sint Maarten",
+        "official_name": "Sint Maarten",
         "iso_code": "SXM",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Slovakia",
-        "official_name": null,
+        "official_name": "Slovak Republic",
         "iso_code": "SVK",
         "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Central Europe",
+        "latlng": null
     },
     {
         "name": "Slovenia",
-        "official_name": null,
+        "official_name": "Republic of Slovenia",
         "iso_code": "SVN",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Central Europe",
+        "latlng": null
     },
     {
         "name": "Solomon Islands",
-        "official_name": null,
+        "official_name": "Solomon Islands",
         "iso_code": "SLB",
         "region": "Oceania",
-        "subregion": "Melanesia"
+        "subregion": "Melanesia",
+        "latlng": null
     },
     {
         "name": "Somalia",
-        "official_name": null,
+        "official_name": "Federal Republic of Somalia",
         "iso_code": "SOM",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "South Africa",
-        "official_name": null,
+        "official_name": "Republic of South Africa",
         "iso_code": "ZAF",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Southern Africa",
+        "latlng": null
     },
     {
-        "name": "South Georgia and the South Sandwich Islands",
-        "official_name": null,
+        "name": "South Georgia",
+        "official_name": "South Georgia and the South Sandwich Islands",
         "iso_code": "SGS",
-        "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "region": "Antarctic",
+        "subregion": "Unclassified",
+        "latlng": null
+    },
+    {
+        "name": "South Korea",
+        "official_name": "Republic of Korea",
+        "iso_code": "KOR",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+        "latlng": null
     },
     {
         "name": "South Sudan",
-        "official_name": null,
+        "official_name": "Republic of South Sudan",
         "iso_code": "SSD",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Middle Africa",
+        "latlng": null
     },
     {
         "name": "Spain",
-        "official_name": null,
+        "official_name": "Kingdom of Spain",
         "iso_code": "ESP",
         "region": "Europe",
-        "subregion": "Southern Europe"
+        "subregion": "Southern Europe",
+        "latlng": null
     },
     {
         "name": "Sri Lanka",
-        "official_name": null,
+        "official_name": "Democratic Socialist Republic of Sri Lanka",
         "iso_code": "LKA",
         "region": "Asia",
-        "subregion": "Southern Asia"
-    },
-    {
-        "name": "State of Palestine",
-        "official_name": null,
-        "iso_code": "PSE",
-        "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Southern Asia",
+        "latlng": null
     },
     {
         "name": "Sudan",
-        "official_name": null,
+        "official_name": "Republic of the Sudan",
         "iso_code": "SDN",
         "region": "Africa",
-        "subregion": "Northern Africa"
+        "subregion": "Northern Africa",
+        "latlng": null
     },
     {
         "name": "Suriname",
-        "official_name": null,
+        "official_name": "Republic of Suriname",
         "iso_code": "SUR",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
-        "name": "Svalbard and Jan Mayen Islands",
-        "official_name": null,
+        "name": "Svalbard and Jan Mayen",
+        "official_name": "Svalbard og Jan Mayen",
         "iso_code": "SJM",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Sweden",
-        "official_name": null,
+        "official_name": "Kingdom of Sweden",
         "iso_code": "SWE",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
         "name": "Switzerland",
-        "official_name": null,
+        "official_name": "Swiss Confederation",
         "iso_code": "CHE",
         "region": "Europe",
-        "subregion": "Western Europe"
+        "subregion": "Western Europe",
+        "latlng": null
     },
     {
-        "name": "Syrian Arab Republic",
-        "official_name": null,
+        "name": "Syria",
+        "official_name": "Syrian Arab Republic",
         "iso_code": "SYR",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
+    },
+    {
+        "name": "São Tomé and Príncipe",
+        "official_name": "Democratic Republic of São Tomé and Príncipe",
+        "iso_code": "STP",
+        "region": "Africa",
+        "subregion": "Middle Africa",
+        "latlng": null
+    },
+    {
+        "name": "Taiwan",
+        "official_name": "Republic of China (Taiwan)",
+        "iso_code": "TWN",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Tajikistan",
-        "official_name": null,
+        "official_name": "Republic of Tajikistan",
         "iso_code": "TJK",
         "region": "Asia",
-        "subregion": "Central Asia"
+        "subregion": "Central Asia",
+        "latlng": null
+    },
+    {
+        "name": "Tanzania",
+        "official_name": "United Republic of Tanzania",
+        "iso_code": "TZA",
+        "region": "Africa",
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Thailand",
-        "official_name": null,
+        "official_name": "Kingdom of Thailand",
         "iso_code": "THA",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Timor-Leste",
-        "official_name": null,
+        "official_name": "Democratic Republic of Timor-Leste",
         "iso_code": "TLS",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
         "name": "Togo",
-        "official_name": null,
+        "official_name": "Togolese Republic",
         "iso_code": "TGO",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Western Africa",
+        "latlng": null
     },
     {
         "name": "Tokelau",
-        "official_name": null,
+        "official_name": "Tokelau",
         "iso_code": "TKL",
         "region": "Oceania",
-        "subregion": "Polynesia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
         "name": "Tonga",
-        "official_name": null,
+        "official_name": "Kingdom of Tonga",
         "iso_code": "TON",
         "region": "Oceania",
-        "subregion": "Polynesia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
         "name": "Trinidad and Tobago",
-        "official_name": null,
+        "official_name": "Republic of Trinidad and Tobago",
         "iso_code": "TTO",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Tunisia",
-        "official_name": null,
+        "official_name": "Republic of Tunisia",
         "iso_code": "TUN",
         "region": "Africa",
-        "subregion": "Northern Africa"
+        "subregion": "Northern Africa",
+        "latlng": null
+    },
+    {
+        "name": "Turkey",
+        "official_name": "Republic of Türkiye",
+        "iso_code": "TUR",
+        "region": "Asia",
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Turkmenistan",
-        "official_name": null,
+        "official_name": "Turkmenistan",
         "iso_code": "TKM",
         "region": "Asia",
-        "subregion": "Central Asia"
+        "subregion": "Central Asia",
+        "latlng": null
     },
     {
         "name": "Turks and Caicos Islands",
-        "official_name": null,
+        "official_name": "Turks and Caicos Islands",
         "iso_code": "TCA",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Tuvalu",
-        "official_name": null,
+        "official_name": "Tuvalu",
         "iso_code": "TUV",
         "region": "Oceania",
-        "subregion": "Polynesia"
-    },
-    {
-        "name": "Türkiye",
-        "official_name": null,
-        "iso_code": "TUR",
-        "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
         "name": "Uganda",
-        "official_name": null,
+        "official_name": "Republic of Uganda",
         "iso_code": "UGA",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Ukraine",
-        "official_name": null,
+        "official_name": "Ukraine",
         "iso_code": "UKR",
         "region": "Europe",
-        "subregion": "Eastern Europe"
+        "subregion": "Eastern Europe",
+        "latlng": null
     },
     {
         "name": "United Arab Emirates",
-        "official_name": null,
+        "official_name": "United Arab Emirates",
         "iso_code": "ARE",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
-        "name": "United Kingdom of Great Britain and Northern Ireland",
-        "official_name": null,
+        "name": "United Kingdom",
+        "official_name": "United Kingdom of Great Britain and Northern Ireland",
         "iso_code": "GBR",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     },
     {
-        "name": "United Republic of Tanzania",
-        "official_name": null,
-        "iso_code": "TZA",
-        "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "name": "United States",
+        "official_name": "United States of America",
+        "iso_code": "USA",
+        "region": "Americas",
+        "subregion": "North America",
+        "latlng": null
     },
     {
         "name": "United States Minor Outlying Islands",
-        "official_name": null,
+        "official_name": "United States Minor Outlying Islands",
         "iso_code": "UMI",
-        "region": "Oceania",
-        "subregion": "Micronesia"
+        "region": "Americas",
+        "subregion": "North America",
+        "latlng": null
     },
     {
         "name": "United States Virgin Islands",
-        "official_name": null,
+        "official_name": "Virgin Islands of the United States",
         "iso_code": "VIR",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
-    },
-    {
-        "name": "United States of America",
-        "official_name": null,
-        "iso_code": "USA",
-        "region": "Americas",
-        "subregion": "Northern America"
+        "subregion": "Caribbean",
+        "latlng": null
     },
     {
         "name": "Uruguay",
-        "official_name": null,
+        "official_name": "Oriental Republic of Uruguay",
         "iso_code": "URY",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
         "name": "Uzbekistan",
-        "official_name": null,
+        "official_name": "Republic of Uzbekistan",
         "iso_code": "UZB",
         "region": "Asia",
-        "subregion": "Central Asia"
+        "subregion": "Central Asia",
+        "latlng": null
     },
     {
         "name": "Vanuatu",
-        "official_name": null,
+        "official_name": "Republic of Vanuatu",
         "iso_code": "VUT",
         "region": "Oceania",
-        "subregion": "Melanesia"
+        "subregion": "Melanesia",
+        "latlng": null
     },
     {
-        "name": "Venezuela (Bolivarian Republic of)",
-        "official_name": null,
+        "name": "Vatican City",
+        "official_name": "Vatican City State",
+        "iso_code": "VAT",
+        "region": "Europe",
+        "subregion": "Southern Europe",
+        "latlng": null
+    },
+    {
+        "name": "Venezuela",
+        "official_name": "Bolivarian Republic of Venezuela",
         "iso_code": "VEN",
         "region": "Americas",
-        "subregion": "Latin America and the Caribbean"
+        "subregion": "South America",
+        "latlng": null
     },
     {
-        "name": "Viet Nam",
-        "official_name": null,
+        "name": "Vietnam",
+        "official_name": "Socialist Republic of Vietnam",
         "iso_code": "VNM",
         "region": "Asia",
-        "subregion": "South-eastern Asia"
+        "subregion": "South-Eastern Asia",
+        "latlng": null
     },
     {
-        "name": "Wallis and Futuna Islands",
-        "official_name": null,
+        "name": "Wallis and Futuna",
+        "official_name": "Territory of the Wallis and Futuna Islands",
         "iso_code": "WLF",
         "region": "Oceania",
-        "subregion": "Polynesia"
+        "subregion": "Polynesia",
+        "latlng": null
     },
     {
         "name": "Western Sahara",
-        "official_name": null,
+        "official_name": "Sahrawi Arab Democratic Republic",
         "iso_code": "ESH",
         "region": "Africa",
-        "subregion": "Northern Africa"
+        "subregion": "Northern Africa",
+        "latlng": null
     },
     {
         "name": "Yemen",
-        "official_name": null,
+        "official_name": "Republic of Yemen",
         "iso_code": "YEM",
         "region": "Asia",
-        "subregion": "Western Asia"
+        "subregion": "Western Asia",
+        "latlng": null
     },
     {
         "name": "Zambia",
-        "official_name": null,
+        "official_name": "Republic of Zambia",
         "iso_code": "ZMB",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Eastern Africa",
+        "latlng": null
     },
     {
         "name": "Zimbabwe",
-        "official_name": null,
+        "official_name": "Republic of Zimbabwe",
         "iso_code": "ZWE",
         "region": "Africa",
-        "subregion": "Sub-Saharan Africa"
+        "subregion": "Southern Africa",
+        "latlng": null
     },
     {
         "name": "Åland Islands",
-        "official_name": null,
+        "official_name": "Åland Islands",
         "iso_code": "ALA",
         "region": "Europe",
-        "subregion": "Northern Europe"
+        "subregion": "Northern Europe",
+        "latlng": null
     }
 ]
