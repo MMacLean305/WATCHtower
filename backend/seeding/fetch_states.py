@@ -2,7 +2,6 @@ import json
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
-
 URL = "https://unstats.un.org/unsd/methodology/m49/overview/"
 
 DATA_PATH = (
@@ -11,6 +10,13 @@ DATA_PATH = (
     / "states.json"
 )
 
+REQUIRED_HEADERS = {
+    "Country or Area",
+    "ISO-alpha3 Code",
+    "Region Name",
+    "Sub-region Name",
+}
+
 
 def fetch_states():
     response = requests.get(URL, timeout=30)
@@ -18,36 +24,35 @@ def fetch_states():
 
     soup = BeautifulSoup(response.text, "html.parser")
 
-    # Locate the English-language M49 table
     table = None
+    headers = None
 
+    # Locate the English-language UN M49 table.
     for candidate in soup.find_all("table"):
-        headers = [
-            th.get_text(" ", strip=True)
-            for th in candidate.find_all("th")
+        first_row = candidate.find("tr")
+
+        if first_row is None:
+            continue
+
+        candidate_headers = [
+            cell.get_text(" ", strip=True)
+            for cell in first_row.find_all(["th", "td"])
         ]
 
-        if (
-            "Country or Area" in headers
-            and "ISO-alpha3 Code" in headers
-            and "Region Name" in headers
-        ):
+        if REQUIRED_HEADERS.issubset(set(candidate_headers)):
             table = candidate
+            headers = candidate_headers
             break
 
     if table is None:
         raise ValueError("Could not find the UN M49 English table")
 
-    headers = [
-        th.get_text(" ", strip=True)
-        for th in table.find_all("th")
-    ]
-
     states = []
     seen_codes = set()
 
-    for row in table.find_all("tr"):
-        cells = row.find_all("td")
+    # Skip the first row because it contains column headers.
+    for row in table.find_all("tr")[1:]:
+        cells = row.find_all(["td", "th"])
 
         if len(cells) != len(headers):
             continue
@@ -59,21 +64,26 @@ def fetch_states():
 
         record = dict(zip(headers, values))
 
-        iso_code = record["ISO-alpha3 Code"]
+        iso_code = record["ISO-alpha3 Code"].strip()
+        name = record["Country or Area"].strip()
 
-        if not iso_code or iso_code in seen_codes:
+        if not iso_code or not name:
+            continue
+
+        if iso_code in seen_codes:
             continue
 
         seen_codes.add(iso_code)
 
         states.append({
-            "name": record["Country or Area"],
+            "name": name,
             "official_name": None,
             "iso_code": iso_code,
             "region": record["Region Name"] or "Unclassified",
             "subregion": record["Sub-region Name"] or None
         })
 
+    # Validate the dataset before overwriting existing data.
     if len(states) < 200:
         raise ValueError(
             f"Unexpectedly few records: {len(states)}"
@@ -84,7 +94,12 @@ def fetch_states():
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     with open(DATA_PATH, "w", encoding="utf-8") as file:
-        json.dump(states, file, indent=4, ensure_ascii=False)
+        json.dump(
+            states,
+            file,
+            indent=4,
+            ensure_ascii=False
+        )
 
     print(f"Saved {len(states)} records to {DATA_PATH}")
 
