@@ -8,7 +8,7 @@ The platform aims to consolidate geopolitical information from governmental agen
 
 **The primary objective of WATCHtower is to help users understand current geopolitical conditions, monitor significant international developments, and examine how conditions evolve over time.**
 
-The project is currently focused on backend infrastructure, database development, and establishing the foundations for future geopolitical data ingestion and analysis.
+The project is currently focused on backend infrastructure, REST API development, database management, and establishing the foundations for future geopolitical data ingestion and analysis.
 
 ## Planned Features
 
@@ -17,10 +17,10 @@ The project is currently focused on backend infrastructure, database development
 - **Geopolitical Event Monitoring:** Aggregate and organize international events from a variety of external data sources.
 - **Risk Assessment:** Evaluate country-level conditions using six geopolitical risk factors and a composite risk score.
 - **Historical Analysis:** Track changes in geopolitical conditions and risk assessments through historical records and graphical visualizations.
-- **Data Transparency:** Identify the original sources, publication dates, and update information associated with geopolitical data.
-- **Country Comparisons:** Compare geopolitical conditions and risk indicators across different countries and regions.
+- **Data Transparency:** Identify original sources, publication dates, and update information associated with geopolitical data.
+- **Country Comparisons:** Compare geopolitical conditions and risk indicators across countries and regions.
 
-These features represent the intended functionality of WATCHtower and will be implemented incrementally as the platform develops.
+These features represent the intended functionality of WATCHtower and will be implemented incrementally.
 
 ## Geopolitical Risk Assessment
 
@@ -41,20 +41,16 @@ The purpose of this score is to provide users with a general understanding of cu
 
 The scoring methodology is currently under development. Individual risk indicators, data normalization techniques, weighting methods, and historical calculations have not yet been implemented.
 
-Future development will focus on creating a transparent, reproducible methodology that incorporates measurable indicators from reliable data sources.
-
 ## Data Sources
 
 WATCHtower is designed to aggregate geopolitical information from a broad range of authoritative and publicly accessible sources.
 
-The platform's long-term objective is to incorporate data from numerous governmental, international, academic, and research-based organizations, rather than rely on a limited number of providers.
-
-Potential sources include, but are not limited to:
+Potential data providers include, but are not limited to:
 
 | Category | Potential Sources |
 |---|---|
 | Geographic and Demographic | United Nations, World Bank, national statistical agencies |
-| Economic and Financial | International Monetary Fund, World Bank, OECD, central banks |
+| Economic and Financial | IMF, World Bank, OECD, central banks |
 | Armed Conflict | UCDP, ACLED, conflict research institutions |
 | Terrorism and Security | Global Terrorism Database, government security reports |
 | Political Stability and Governance | World Bank Governance Indicators, V-Dem, Freedom House |
@@ -63,9 +59,7 @@ Potential sources include, but are not limited to:
 | Travel Advisories | U.S. Department of State, UK FCDO, other national foreign ministries |
 | Current Events | International news organizations, official government publications, verified reporting |
 
-These sources represent potential integration opportunities, not a finalized or exhaustive list.
-
-Additional providers will be evaluated as development progresses. Source selection will consider reliability, geographic coverage, update frequency, licensing requirements, accessibility, and technical compatibility.
+These are potential integration opportunities, not a finalized or exhaustive list. Source selection will consider reliability, geographic coverage, update frequency, licensing requirements, accessibility, and technical compatibility.
 
 ### Currently Integrated Data
 
@@ -75,7 +69,7 @@ WATCHtower currently supports retrieving geographic classification data from the
 
 The initial dataset contains **248 country and area records**, including standardized geographic identifiers, country or area names, and regional classifications.
 
-These records are stored locally in JSON format and have been successfully imported into the PostgreSQL database.
+These records are stored locally in JSON format and have been successfully imported into PostgreSQL.
 
 Official source: https://unstats.un.org/unsd/methodology/m49/
 
@@ -83,67 +77,147 @@ Additional geopolitical data integrations remain under development.
 
 ## Current Development Progress
 
-WATCHtower is currently in the early stages of development, with initial work concentrated on backend architecture, relational database infrastructure, and geographic data retrieval.
+WATCHtower is in early development, with initial work concentrated on backend architecture, relational database infrastructure, geographic data retrieval, and REST API implementation.
 
 ### Implemented Backend Components
 
-- Initial Flask application and backend structure.
-- SQLAlchemy integration for relational data management.
-- PostgreSQL database configuration and connectivity.
+- Initial Flask application and modular backend structure.
+- SQLAlchemy integration with PostgreSQL.
 - Database models for states, sources, geopolitical events, risk assessments, and risk history.
 - Initial relational database table creation.
 - Environment-based database configuration.
 - UN M49 geographic data retrieval utility.
-- JSON storage for retrieved country and area records.
-- Database seeding utility tested with 248 records.
+- JSON storage for country and area records.
+- Database seeding utility successfully tested with 248 records.
 - Reusable HTTP client supporting retry and exponential backoff.
+- Flask Blueprints for organizing state and event API endpoints.
+- Reusable serialization functions for converting database models into JSON responses.
+- Initial REST API endpoints for retrieving countries and geopolitical events.
 
 ### Current Limitations
 
-The existing backend provides an initial technical foundation but does not yet implement the platform's primary geopolitical monitoring and analytical capabilities.
+Although the initial API endpoints have been implemented, the backend does not yet provide a complete geopolitical monitoring service.
 
-The following components remain under development:
+Outstanding components include:
 
-- REST API endpoints.
+- Automated testing and comprehensive API validation.
+- Pagination and advanced event filtering.
 - Automated geopolitical event ingestion.
 - External source management and event normalization.
-- Risk assessment calculations.
-- Composite geopolitical risk scoring.
+- Risk assessment calculations and composite scoring.
 - Historical risk analysis.
-- Interactive geographic visualization.
-- Country dashboards and profiles.
+- Interactive frontend and geographic visualization.
 - Travel advisory integration.
-- Automated backend testing and production deployment.
+- Production deployment.
 
-The current geographic data pipeline is an initial proof of concept for retrieving and storing structured external information. It does not yet represent a complete geopolitical data collection system.
+The existing geographic data pipeline provides a foundation for future ingestion systems but does not yet constitute a complete geopolitical data collection platform.
+
+## REST API
+
+WATCHtower currently includes five GET endpoints implemented using Flask Blueprints.
+
+### State Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/states` | Retrieve all stored countries and areas |
+| GET | `/api/states/<iso_code>` | Retrieve a country or area by ISO3 code |
+| GET | `/api/states/<iso3>/events` | Retrieve events associated with a country or area |
+
+### Event Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/events` | Retrieve all stored geopolitical events |
+| GET | `/api/events/<event_id>` | Retrieve an individual event by its database ID |
+
+### Example Requests
+
+Retrieve all countries and areas:
+
+```http
+GET http://127.0.0.1:5000/api/states
+```
+
+Retrieve a country by ISO3 code:
+
+```http
+GET http://127.0.0.1:5000/api/states/USA
+```
+
+Retrieve events associated with a country:
+
+```http
+GET http://127.0.0.1:5000/api/states/UKR/events
+```
+
+Retrieve all events:
+
+```http
+GET http://127.0.0.1:5000/api/events
+```
+
+### Example State Response
+
+```json
+{
+  "id": 1,
+  "name": "Afghanistan",
+  "iso3": "AFG"
+}
+```
+
+The example above illustrates the current response structure; database IDs depend on the local database.
+
+### API Behavior
+
+- Successful GET requests return JSON with HTTP status `200`.
+- Requests for nonexistent countries or events return HTTP status `404`.
+- Country ISO3 lookups are case-insensitive.
+- Event endpoints return empty JSON arrays when no matching events are stored.
+- Event responses include geographic coordinates when available.
+
+**Current limitation:** Event retrieval endpoints have been implemented, but the database does not yet contain an established external geopolitical event dataset. These endpoints require additional testing with populated event records.
 
 ## Database Architecture
 
 WATCHtower uses **PostgreSQL** as its primary relational database, with **Flask-SQLAlchemy** providing object-relational mapping.
 
-The current backend defines five primary database tables:
+The backend defines five primary tables:
 
 | Table | Purpose |
 |---|---|
-| `states` | Stores country and area identifiers and geographic information |
-| `sources` | Stores information source metadata and attribution |
-| `events` | Represents geopolitical events and developments |
-| `risks` | Represents country-level geopolitical risk assessments |
-| `risk_history` | Supports historical risk tracking and analysis |
+| `states` | Country and area identifiers and geographic information |
+| `sources` | Information source metadata and attribution |
+| `events` | Geopolitical events and developments |
+| `risks` | Country-level geopolitical risk assessments |
+| `risk_history` | Historical geopolitical risk records |
 
 The initial database schema has been created successfully.
 
-The `states` table has been populated with 248 records retrieved from the United Nations M49 classification system. The remaining tables are currently empty and will be populated as their associated features are implemented.
+The `states` table contains 248 records retrieved from the United Nations M49 classification system. The remaining tables are currently unpopulated pending development of their associated functionality.
 
 ### Database Management
 
 Database connectivity is configured through the `DATABASE_URL` environment variable.
 
-The application currently initializes its database tables using SQLAlchemy's `db.create_all()` functionality.
+The application currently initializes database tables using SQLAlchemy's `db.create_all()` functionality.
 
-Flask-Migrate has been installed as a dependency, but a version-controlled database migration workflow has not yet been established.
+Flask-Migrate is included in the project's dependencies, but a version-controlled database migration workflow has not yet been established.
 
-As the database schema evolves, migration tooling will be incorporated to manage structural changes without relying exclusively on automatic table creation.
+## Backend Architecture
+
+WATCHtower separates backend responsibilities into distinct modules:
+
+- **Models:** SQLAlchemy database model definitions.
+- **Routes:** Flask Blueprints defining REST API endpoints.
+- **Serializers:** Reusable functions for converting model objects into JSON-compatible dictionaries.
+- **Ingestion:** Utilities for retrieving external data.
+- **Seeding:** Scripts for populating database tables.
+- **Data:** Locally stored geographic datasets.
+- **Application Configuration:** Flask initialization and Blueprint registration.
+
+This modular structure is intended to support future expansion without concentrating database models, endpoint logic, and data processing in a single file.
 
 ## Technology Stack
 
@@ -154,9 +228,9 @@ As the database schema evolves, migration tooling will be incorporated to manage
 - **Flask-SQLAlchemy:** Object-relational mapping and database integration.
 - **PostgreSQL:** Relational database management system.
 - **Psycopg:** PostgreSQL database driver.
-- **Requests:** HTTP communication with external data sources.
-- **Beautiful Soup:** Parsing and extracting structured information from external web resources.
-- **python-dotenv:** Environment-based application configuration.
+- **Requests:** HTTP communication with external sources.
+- **Beautiful Soup:** Parsing structured information from web resources.
+- **python-dotenv:** Environment-based configuration.
 - **Flask-Migrate:** Installed for future database migration management.
 
 ### Development Tools
@@ -168,15 +242,13 @@ As the database schema evolves, migration tooling will be incorporated to manage
 
 ### Planned Components
 
-- RESTful API architecture.
 - Automated geopolitical data ingestion pipelines.
-- Interactive frontend and geographic visualization.
+- Interactive web frontend and geographic visualization.
 - Country information dashboards.
-- Geopolitical risk assessment and historical analysis.
-- Data visualization and comparative analytics.
-- Testing, monitoring, and deployment infrastructure.
-
-Additional technologies will be selected as the platform's requirements evolve.
+- Risk assessment and historical analysis.
+- Automated testing and monitoring.
+- Production deployment infrastructure.
+- Potential future desktop application using a shared frontend and backend API.
 
 ## Installation and Setup
 
@@ -216,15 +288,11 @@ source .venv/bin/activate
 
 ### 3. Install Dependencies
 
-Install the project's Python dependencies:
-
 ```bash
 python -m pip install -r requirements.txt
 ```
 
 ### 4. Configure PostgreSQL
-
-WATCHtower uses PostgreSQL as its primary database.
 
 Create a local PostgreSQL database named:
 
@@ -232,23 +300,19 @@ Create a local PostgreSQL database named:
 watchtower
 ```
 
-This can be accomplished through pgAdmin or PostgreSQL's command-line utilities.
-
-Inside the `backend` directory, create a `.env` file with the following configuration:
+Inside the `backend` directory, create a `.env` file containing:
 
 ```dotenv
 DATABASE_URL=postgresql+psycopg://postgres:YOUR_PASSWORD@localhost:5432/watchtower
 ```
 
-Replace `YOUR_PASSWORD` with the password associated with your local PostgreSQL installation.
+Replace `YOUR_PASSWORD` with your local PostgreSQL password and adjust the username, host, or port as necessary.
 
-Adjust the username, hostname, and port if your PostgreSQL configuration differs.
-
-**Security:** Environment files containing database credentials are excluded from version control through `.gitignore`. Never commit passwords, API keys, or other sensitive credentials.
+**Security:** The `.env` file is excluded from Git tracking. Never commit passwords, API keys, or other sensitive credentials.
 
 ### 5. Run the Backend
 
-Navigate to the backend directory:
+Navigate into the backend directory:
 
 ```bash
 cd backend
@@ -257,12 +321,20 @@ cd backend
 Start the Flask development server:
 
 ```bash
-flask --app app run --debug
+python -m flask --app app run --debug
 ```
 
-The application uses the configured PostgreSQL connection and currently initializes its database schema through SQLAlchemy.
+The application connects to PostgreSQL using `DATABASE_URL` and currently initializes its database tables through SQLAlchemy.
 
-The Flask development server is intended for local development and testing.
+### 6. View Registered API Routes
+
+To inspect the routes registered with Flask:
+
+```bash
+python -m flask --app app routes
+```
+
+This command lists the application's available endpoints and their supported HTTP methods.
 
 ## Data Initialization
 
@@ -282,19 +354,17 @@ backend/data/states.json
 
 This operation requires an internet connection.
 
-The initial dataset contains 248 country and area records.
-
 ### Seed the PostgreSQL Database
 
-After configuring the database and initializing the application, run:
+After configuring PostgreSQL and initializing the database, run:
 
 ```bash
 python -m seeding.seed_states
 ```
 
-The seeding utility reads the local JSON dataset and inserts records into PostgreSQL.
+The seeding utility reads the local JSON dataset and inserts country and area records into PostgreSQL.
 
-The initial seeding process was successfully tested with the following result:
+The initial seeding process was successfully tested with:
 
 ```text
 Added 248 states. Skipped 0 existing states.
@@ -304,13 +374,13 @@ The utility checks for existing records to avoid inserting duplicates during rep
 
 ### Verify Database Records
 
-To verify that the country records were imported successfully, run the following from the `backend` directory:
+From the `backend` directory, run:
 
 ```powershell
 python -c "from app import app; from models import State; ctx = app.app_context(); ctx.push(); print('Total states:', State.query.count()); ctx.pop()"
 ```
 
-A successfully populated database should return:
+Expected output for the current dataset:
 
 ```text
 Total states: 248
@@ -328,7 +398,6 @@ WATCHtower/
 ├── backend/
 │   ├── app.py
 │   ├── database.py
-│   ├── .env
 │   ├── data/
 │   │   ├── states.json
 │   │   └── state-overviews.json
@@ -341,16 +410,24 @@ WATCHtower/
 │   │   ├── event.py
 │   │   ├── risk.py
 │   │   └── risk_history.py
-│   └── seeding/
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── states.py
+│   │   └── events.py
+│   ├── seeding/
+│   │   ├── __init__.py
+│   │   ├── fetch_states.py
+│   │   └── seed_states.py
+│   └── serializers/
 │       ├── __init__.py
-│       ├── fetch_states.py
-│       └── seed_states.py
+│       ├── state_serializer.py
+│       └── event_serializer.py
 └── frontend/
 ```
 
-The structure above reflects the current backend organization and will expand as additional components are implemented.
+The structure reflects the current backend organization and will expand as additional components are implemented.
 
-The `.env` file is used for local configuration and is not tracked in the repository.
+Local environment configuration files and virtual environments are excluded from version control.
 
 ## Project Documentation
 
@@ -360,9 +437,9 @@ For a more detailed explanation of WATCHtower's objectives, intended functionali
 
 ## Development Roadmap
 
-WATCHtower is currently focused on establishing its backend foundation and developing the initial data infrastructure required for future geopolitical analysis.
+WATCHtower is currently focused on backend infrastructure, geographic data management, and initial REST API functionality.
 
-The roadmap below tracks individual milestones rather than treating entire development phases as complete.
+The following roadmap tracks individual development milestones rather than treating entire phases as complete.
 
 ### Phase 1 — Backend Architecture and Infrastructure
 
@@ -371,6 +448,8 @@ The roadmap below tracks individual milestones rather than treating entire devel
 - [x] Configure PostgreSQL database connection.
 - [x] Initialize initial relational database tables.
 - [x] Configure environment-based database credentials.
+- [x] Organize API endpoints using Flask Blueprints.
+- [x] Introduce reusable model serializers.
 - [ ] Establish version-controlled database schema migrations.
 - [ ] Implement comprehensive input validation and error handling.
 - [ ] Develop automated backend tests.
@@ -380,18 +459,21 @@ The roadmap below tracks individual milestones rather than treating entire devel
 - [x] Implement initial UN M49 data retrieval.
 - [x] Store retrieved country and area information in JSON.
 - [x] Implement and test initial PostgreSQL state seeding.
+- [x] Implement initial country retrieval API endpoints.
 - [ ] Validate and refine country metadata.
-- [ ] Develop country information REST API endpoints.
 - [ ] Expand country profiles with additional geographic, demographic, and political information.
 - [ ] Establish periodic country data updates.
 
 ### Phase 3 — Geopolitical Data Collection
 
+- [x] Implement initial event retrieval API endpoints.
+- [ ] Test event endpoints with populated database records.
+- [ ] Implement event pagination and filtering.
 - [ ] Evaluate and select external geopolitical data providers.
 - [ ] Implement source registration and metadata management.
 - [ ] Develop initial geopolitical event ingestion pipeline.
 - [ ] Normalize and validate incoming geopolitical event data.
-- [ ] Associate geopolitical events with relevant countries and sources.
+- [ ] Associate ingested events with relevant countries and sources.
 - [ ] Implement recurring data retrieval and update workflows.
 - [ ] Expand coverage across geopolitical data categories.
 
@@ -424,6 +506,7 @@ The roadmap below tracks individual milestones rather than treating entire devel
 - [ ] Conduct usability and performance testing.
 - [ ] Deploy initial public release.
 - [ ] Expand geographic coverage, data sources, and analytical capabilities.
+- [ ] Evaluate packaging the web frontend as a desktop application.
 
 ## Disclaimer
 
