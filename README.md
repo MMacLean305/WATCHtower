@@ -1,3 +1,4 @@
+
 # WATCHtower
 
 **Worldwide Analysis of Threats, Conflicts & Hazards**
@@ -49,7 +50,7 @@ Potential data providers include, but are not limited to:
 
 | Category | Potential Sources |
 |---|---|
-| Geographic and Demographic | United Nations, World Bank, national statistical agencies |
+| Geographic and Demographic | REST Countries (country reference data), World Bank, national statistical agencies |
 | Economic and Financial | IMF, World Bank, OECD, central banks |
 | Armed Conflict | UCDP, ACLED, conflict research institutions |
 | Terrorism and Security | Global Terrorism Database, government security reports |
@@ -63,17 +64,15 @@ These are potential integration opportunities, not a finalized or exhaustive lis
 
 ### Currently Integrated Data
 
-**United Nations M49 Geographic Classification**
+**REST Countries — Country Reference Data**
 
-WATCHtower currently supports retrieving geographic classification data from the United Nations M49 system.
+WATCHtower currently retrieves country and area reference information through the REST Countries API, including common and official names, ISO 3166-1 alpha-3 codes, regions, subregions, and geographic coordinates where available.
 
-The initial dataset contains **248 country and area records**, including standardized geographic identifiers, country or area names, and regional classifications.
+A dedicated fetching module retrieves paginated API results, a generation script validates and saves them to `backend/data/states.json`, and a seeding script inserts or updates the corresponding PostgreSQL records by ISO3 code. Existing database IDs are preserved when records are updated.
 
-These records are stored locally in JSON format and have been successfully imported into PostgreSQL.
+Official documentation: https://restcountries.com/docs/countries
 
-Official source: https://unstats.un.org/unsd/methodology/m49/
-
-Additional geopolitical data integrations remain under development.
+The country reference data pipeline has been implemented and tested. Additional geopolitical data integrations remain under development.
 
 ## Current Development Progress
 
@@ -86,9 +85,9 @@ WATCHtower is in early development, with initial work concentrated on backend ar
 - Database models for states, sources, geopolitical events, risk assessments, and risk history.
 - Initial relational database table creation.
 - Environment-based database configuration.
-- UN M49 geographic data retrieval utility.
-- JSON storage for country and area records.
-- Database seeding utility successfully tested with 248 records.
+- REST Countries v5 country reference data fetcher with API-key authentication and pagination.
+- JSON dataset generation and validation for country and area records.
+- PostgreSQL seeding utility that inserts new records and updates existing records by ISO3 code.
 - Reusable HTTP client supporting retry and exponential backoff.
 - Flask Blueprints for organizing state and event API endpoints.
 - Reusable serialization functions for converting database models into JSON responses.
@@ -110,7 +109,7 @@ Outstanding components include:
 - Travel advisory integration.
 - Production deployment.
 
-The existing geographic data pipeline provides a foundation for future ingestion systems but does not yet constitute a complete geopolitical data collection platform.
+The existing country reference data pipeline provides a foundation for future ingestion systems but does not yet constitute a complete geopolitical data collection platform.
 
 ## REST API
 
@@ -163,11 +162,14 @@ GET http://127.0.0.1:5000/api/events
 {
   "id": 1,
   "name": "Afghanistan",
-  "iso3": "AFG"
+  "official_name": "Islamic Republic of Afghanistan",
+  "iso3": "AFG",
+  "region": "Asia",
+  "subregion": "Southern Asia"
 }
 ```
 
-The example above illustrates the current response structure; database IDs depend on the local database.
+The example above illustrates the serializer fields; names and classifications reflect the stored dataset, and database IDs depend on the local database.
 
 ### API Behavior
 
@@ -195,7 +197,7 @@ The backend defines five primary tables:
 
 The initial database schema has been created successfully.
 
-The `states` table contains 248 records retrieved from the United Nations M49 classification system. The remaining tables are currently unpopulated pending development of their associated functionality.
+The `states` table is populated from the generated REST Countries dataset. The exact record count depends on the API response and local database contents. The remaining tables are currently unpopulated pending development of their associated functionality.
 
 ### Database Management
 
@@ -212,8 +214,10 @@ WATCHtower separates backend responsibilities into distinct modules:
 - **Models:** SQLAlchemy database model definitions.
 - **Routes:** Flask Blueprints defining REST API endpoints.
 - **Serializers:** Reusable functions for converting model objects into JSON-compatible dictionaries.
-- **Ingestion:** Utilities for retrieving external data.
-- **Seeding:** Scripts for populating database tables.
+- **Fetching:** External country reference data retrieval.
+- **Generation:** Validation and JSON dataset creation.
+- **Ingestion:** Foundation for future geopolitical event processing and HTTP retrieval utilities.
+- **Seeding:** Scripts for inserting and updating database records.
 - **Data:** Locally stored geographic datasets.
 - **Application Configuration:** Flask initialization and Blueprint registration.
 
@@ -229,7 +233,6 @@ This modular structure is intended to support future expansion without concentra
 - **PostgreSQL:** Relational database management system.
 - **Psycopg:** PostgreSQL database driver.
 - **Requests:** HTTP communication with external sources.
-- **Beautiful Soup:** Parsing structured information from web resources.
 - **python-dotenv:** Environment-based configuration.
 - **Flask-Migrate:** Installed for future database migration management.
 
@@ -304,9 +307,10 @@ Inside the `backend` directory, create a `.env` file containing:
 
 ```dotenv
 DATABASE_URL=postgresql+psycopg://postgres:YOUR_PASSWORD@localhost:5432/watchtower
+REST_COUNTRIES_API_KEY=YOUR_REST_COUNTRIES_API_KEY
 ```
 
-Replace `YOUR_PASSWORD` with your local PostgreSQL password and adjust the username, host, or port as necessary.
+Replace `YOUR_PASSWORD` with your local PostgreSQL password and adjust the username, host, or port as necessary. Set `REST_COUNTRIES_API_KEY` to your REST Countries API key before generating the country dataset.
 
 **Security:** The `.env` file is excluded from Git tracking. Never commit passwords, API keys, or other sensitive credentials.
 
@@ -338,23 +342,27 @@ This command lists the application's available endpoints and their supported HTT
 
 ## Data Initialization
 
-### Fetch Country Data
+### 1. Fetch and Generate Country Data
 
-From the `backend` directory, retrieve country and area information from the United Nations M49 classification table:
+From the `backend` directory, retrieve country and area information from REST Countries and generate the validated local JSON dataset:
 
 ```bash
-python -m seeding.fetch_states
+python -m generation.generate_states
 ```
 
-The retrieved information is saved to:
+This command calls `fetching.fetch_rest_countries`, retrieves paginated API results, validates the country records, and writes the generated dataset to:
 
 ```text
 backend/data/states.json
 ```
 
-This operation requires an internet connection.
+This operation requires an internet connection and a configured `REST_COUNTRIES_API_KEY`. The fetcher can also be tested independently without writing the JSON file:
 
-### Seed the PostgreSQL Database
+```bash
+python -m fetching.fetch_rest_countries
+```
+
+### 2. Seed the PostgreSQL Database
 
 After configuring PostgreSQL and initializing the database, run:
 
@@ -362,17 +370,11 @@ After configuring PostgreSQL and initializing the database, run:
 python -m seeding.seed_states
 ```
 
-The seeding utility reads the local JSON dataset and inserts country and area records into PostgreSQL.
+The seeding utility reads the local JSON dataset and inserts new country and area records into PostgreSQL. Existing records are **updated by ISO3 code**, rather than duplicated or deleted, preserving their database IDs.
 
-The initial seeding process was successfully tested with:
+The command prints the number of records added and updated. Counts depend on the current dataset and database contents.
 
-```text
-Added 248 states. Skipped 0 existing states.
-```
-
-The utility checks for existing records to avoid inserting duplicates during repeated execution.
-
-### Verify Database Records
+### 3. Verify Database Records
 
 From the `backend` directory, run:
 
@@ -380,11 +382,7 @@ From the `backend` directory, run:
 python -c "from app import app; from models import State; ctx = app.app_context(); ctx.push(); print('Total states:', State.query.count()); ctx.pop()"
 ```
 
-Expected output for the current dataset:
-
-```text
-Total states: 248
-```
+The total should be consistent with the generated country dataset, accounting for any pre-existing records not present in the latest API response.
 
 ## Project Structure
 
@@ -401,6 +399,12 @@ WATCHtower/
 │   ├── data/
 │   │   ├── states.json
 │   │   └── state-overviews.json
+│   ├── fetching/
+│   │   ├── __init__.py
+│   │   └── fetch_rest_countries.py
+│   ├── generation/
+│   │   ├── __init__.py
+│   │   └── generate_states.py
 │   ├── ingestion/
 │   │   └── http_client.py
 │   ├── models/
@@ -416,7 +420,6 @@ WATCHtower/
 │   │   └── events.py
 │   ├── seeding/
 │   │   ├── __init__.py
-│   │   ├── fetch_states.py
 │   │   └── seed_states.py
 │   └── serializers/
 │       ├── __init__.py
@@ -437,7 +440,7 @@ For a more detailed explanation of WATCHtower's objectives, intended functionali
 
 ## Development Roadmap
 
-WATCHtower is currently focused on backend infrastructure, geographic data management, and initial REST API functionality.
+WATCHtower is currently focused on backend infrastructure, country reference data management, REST API functionality, and preparing for geopolitical event ingestion.
 
 The following roadmap tracks individual development milestones rather than treating entire phases as complete.
 
@@ -456,11 +459,13 @@ The following roadmap tracks individual development milestones rather than treat
 
 ### Phase 2 — Geographic Data and Country Information
 
-- [x] Implement initial UN M49 data retrieval.
-- [x] Store retrieved country and area information in JSON.
-- [x] Implement and test initial PostgreSQL state seeding.
+- [x] Implement REST Countries reference data retrieval with pagination.
+- [x] Generate and validate a local JSON country dataset.
+- [x] Implement and test PostgreSQL state seeding and updates by ISO3 code.
 - [x] Implement initial country retrieval API endpoints.
-- [ ] Validate and refine country metadata.
+- [x] Add common and official country names, regions, and subregions to the reference data pipeline.
+- [ ] Persist and expose geographic coordinates in the State database model and API.
+- [ ] Continue validating and refining country metadata.
 - [ ] Expand country profiles with additional geographic, demographic, and political information.
 - [ ] Establish periodic country data updates.
 
